@@ -1,0 +1,83 @@
+
+* {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+    background-color: rgb(14, 94, 111);
+    color: white;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid rgb(255, 239, 214);
+}
+
+header ul {
+    text-align: center;
+    padding-top: 63px;
+    padding-left: 10px;
+    margin-bottom: 0;
+}
+
+header ul li{
+    display: inline-block;
+    list-style-type: none;
+    color: white;
+    padding: 10px;
+    align-items: center;
+    background-color: rgb(58, 136, 145);
+    margin-right: 10px;
+}
+
+.menu-option {
+    text-decoration: none;
+    color: white;
+}
+
+.menu-option:hover {
+    transition-delay: 50ms;
+    color: rgb(14, 94, 111);
+}
+
+.nav-pane {
+    padding-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 0px;
+}
+
+.welcome-message { 
+    flex-flow: 1;
+    text-align: center;
+}
+
+.welcome-message h1 {
+    margin-bottom: 3px;
+}
+
+.welcome-message h3 {
+    font-style: italic;
+}
+
+body {
+    background-color: rgb(255, 239, 214);
+}
+
+footer {
+    background-color: rgb(14, 94, 111);
+    color: rgb(239, 239, 239);
+
+    padding-top: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    font-style: italic;
+    font-size: 14px;
+}
