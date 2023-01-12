@@ -5,23 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MindAid Homepage</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="/logo.png">
 </head>
 
 <header>
     <div class="nav-pane">
-        <img src="logo.png" alt="MindAid Logo" width="100" height="100" min-width=100%>
+        <img src="/logo.png" alt="MindAid Logo" width="100" height="100" min-width=100%>
         <ul>
-            <li>
-                <a class="menu-option" href="">Home</a>
+            <li class="button">
+                <a class="clickable-link" href="/">Home</a>
             </li>
-            <li>
-                <a class="menu-option" href="">About</a>
+            <li class="button">
+                <a class="clickable-link" href="/about/">About</a>
             </li>
         </ul>
     </div>
     
-    <div class="welcome-message">
+    <div class="header-title">
         <h1>MindAid</h1>
         <h3>Help is on the way!</h3>
     </div>
@@ -29,9 +30,28 @@
     <div  style="width: 257px"></div> <!-- used to center the main title-->
 </header>
 
-<body>
+<body background="/3.png">
 
-    
+    <div class="welcome-message">
+        <h2 style="font-size:xx-large; text-align: center; margin-top: 30px; margin-bottom: 40px;">
+            Welcome to MindAid!
+        </h2>
+        <h3 style="margin-bottom: 35px; text-align: center;">
+            Do you feel you need help improving your academic performance or your mental health?
+        </h3>
+        <h3 style="margin-bottom: 10px; text-align: center; font-style: oblique; text-decoration: underline;">
+            We are here to provide you with
+        </h3>
+        <ul style="list-style-type: none; margin-bottom: 60px;">
+            <li>Academic guidance tailored to your needs</li>
+            <li>A reliable community of mentors</li>
+            <li>Highly-valuable resources for personal growth</li>
+        </ul>
+
+        <a class="clickable-link button" href="/sign-up/" style="margin-bottom: 20px; font-size: large; padding-left: 28px; padding-right: 28px;">Sign Up Now!</a>
+        <h5 style="margin-bottom: 10px;">Already have an account?</h5>
+        <a class="clickable-link button" href="/sign-in/" style="margin-bottom: 10px; font-size: large; padding-left: 56px; padding-right: 56px; margin-bottom: 30px;">Sign in</a>
+    </div>
 
     
 </body>

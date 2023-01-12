@@ -24,22 +24,22 @@ header ul {
     margin-bottom: 0;
 }
 
-header ul li{
+.button{
     display: inline-block;
-    list-style-type: none;
     color: white;
     padding: 10px;
     align-items: center;
     background-color: rgb(58, 136, 145);
     margin-right: 10px;
+    text-align: center;
 }
 
-.menu-option {
+.clickable-link {
     text-decoration: none;
     color: white;
 }
 
-.menu-option:hover {
+.clickable-link:hover {
     transition-delay: 50ms;
     color: rgb(14, 94, 111);
 }
@@ -51,27 +51,45 @@ header ul li{
     padding-bottom: 0px;
 }
 
-.welcome-message { 
+.header-title { 
     flex-flow: 1;
     text-align: center;
 }
 
-.welcome-message h1 {
+.header-title h1 {
     margin-bottom: 3px;
 }
 
-.welcome-message h3 {
+.header-title h3 {
     font-style: italic;
 }
 
 body {
     background-color: rgb(255, 239, 214);
+    background-attachment: fixed;
+}
+
+.welcome-message {
+    text-shadow: 0 0 10px black;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: rgb(58, 136, 145, 0.7);
+    border-radius: 20px;
+}
+
+.welcome-message ul li {
+    margin-bottom: 5px;
 }
 
 footer {
     background-color: rgb(14, 94, 111);
     color: rgb(239, 239, 239);
-
     padding-top: 10px;
     position: fixed;
     bottom: 0;
@@ -80,4 +98,29 @@ footer {
     text-align: center;
     font-style: italic;
     font-size: 14px;
+}
+
+.profile-header {
+    padding-top: 30px;
+    padding-left: 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* REMOVE LATER */  
+    border: 1px solid black;
+    padding-bottom: 10px;
+}
+
+.profile-picture {
+    border: 2px solid black;
+    background-color: black;
+    border-radius: 5px;
+}
+
+.meetings-tab {
+    text-align: center;
+    /* REMOVE LATER */  
+    border: 1px solid black;
+    padding-right: 60px;
+    padding-left: 60px;
 }
