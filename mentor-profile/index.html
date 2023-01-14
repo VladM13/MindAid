@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="margin: 0; padding: 0;">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MindAid Mentor Profile</title>
     <link rel="stylesheet" href="/style.css">
-    <link rel="icon" href="/logo.png">
+    <link rel="icon" href="/resources/logo.png">
 </head>
 
 <header>
     <div class="nav-pane">
-        <img src="/logo.png" alt="MindAid Logo" width="100" height="100" min-width=100%>
+        <img src="/resources/logo.png" alt="MindAid Logo" width="100" height="100" min-width=100%>
         <ul>
             <li class="button">
                 <a class="clickable-link" href="/">Home</a>
@@ -31,10 +31,10 @@
 </header>
 
 <body>
-    <div name="whole-page" style="display: flex; justify-content: space-between;">
-        <div name="main-page" style="display: flex; flex-direction: column; flex: auto;">
-            <div class ="profile-header">
-                <img class="profile-picture" src="profile-picture.jpg" width="120" height="120" min-width=100% alt="Profile Picture" style="padding-left: 0%; padding-top: 0%;">
+    <div name="whole-page" style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+        <div name="main-page" style="display: flex; flex-direction: column; flex: auto; padding-left: 5%;">
+            <div name="profile-top" class ="profile-header">
+                <img class="profile-picture" src="/resources/mentor-profile-picture.jpg" width="120" height="120" min-width=100% alt="Profile Picture" style="padding-left: 0%; padding-top: 0%;">
                 
                 
                 <div style="display:flex; flex-direction: column; white-space: nowrap; flex:auto">
@@ -45,7 +45,7 @@
                             Rating 4.8/5
                         </div>
                         
-                        <a class="button clickable-link" style="height: 18px; margin-bottom: 30px; margin-left: auto; margin-top: 35px;" href="/edit-mentor-profile">Edit profile</a>
+                        <a class="button clickable-link" style="height: 18px; margin-bottom: 30px; margin-left: auto; margin-top: 35px;" href="/edit-mentor-profile/">Edit profile</a>
                     </div>
                     <div style="padding-left: 2%; width: 300px">
                         <p style="margin: 0;">Role: Mentor</p>
@@ -53,20 +53,147 @@
                     </div>
                 </div>
                 
-            </div>  
-        </div>
-    
-        <div name="side-page">
-            <div class="meetings-tab">
-                <h2 style="padding-right: 5%;white-space: nowrap">Incoming meeting requests</h2>
+            </div>
 
+            <div name="profile-middle" style="margin-top: 25px; margin-left: 130px;">
+                <h2 style="padding-right: 5%; white-space: nowrap; margin-top: 10px;">Biography</h2>
+                <textarea readonly class="bio-pane" id="bio" rows="7">Short description</textarea>
+            </div>  
+
+            <div name="profile-bottom" style="display:flex; margin-top: 20px; margin-left: 130px; justify-content: space-between;">
+                <div name="avail-time-slots">
+                    <h2 style="padding-right: 5%; white-space: nowrap; margin-top: 10px; margin-bottom: 7px;">Available time slots</h2>
+                    <div class="time-slots-list">
+                        <div class="time-slot">
+                            <p>Monday</p>
+                            <div name="time-intervals" style="display: flex;">
+                                <input readonly type="time" id="start-time" value="10:00" style="margin-left: 10px; height: 18px; text-align: center; padding-right: 3px;">
+                                <p style="text-decoration: line-through; margin-left: 10px; margin-right: 10px;">-</p>
+                                <input readonly type="time" id="end-time" value="16:00" style="height: 18px; text-align: center; padding-right: 3px;">
+                            </div>
+                        </div>
+                        <div class="time-slot">
+                            <p>Tuesday</p>
+                            <div name="time-intervals" style="display: flex;">
+                                <input readonly type="time" id="start-time" value="15:00" style="margin-left: 10px; height: 18px; text-align: center; padding-right: 3px;">
+                                <p style="text-decoration: line-through; margin-left: 10px; margin-right: 10px;">-</p>
+                                <input readonly type="time" id="end-time" value="18:00" style="height: 18px; text-align: center; padding-right: 3px;">
+                            </div>
+                        </div>
+                        <div class="time-slot">
+                            <p>Wednesday</p>
+                            <div name="time-intervals" style="display: flex;">
+                                <input readonly type="time" id="start-time" value="09:00" style="margin-left: 10px; height: 18px; text-align: center; padding-right: 3px;">
+                                <p style="text-decoration: line-through; margin-left: 10px; margin-right: 10px;">-</p>
+                                <input readonly type="time" id="end-time" value="17:00" style="height: 18px; text-align: center; padding-right: 3px;">
+                            </div>
+                        </div>
+                        
+                        <div class="time-slot">
+                            <p>Thursday</p>
+                            <div name="not-available">
+                                <p style="margin-left: 10px; margin-right: 10px; font-style: italic;">Not Available</p>
+                            </div>
+                        </div>
+                        
+                        <div class="time-slot">
+                            <p>Friday</p>
+                            <div name="time-intervals" style="display: flex;">
+                                <input readonly type="time" id="start-time" value="10:00" style="margin-left: 10px; height: 18px; text-align: center; padding-right: 3px;">
+                                <p style="text-decoration: line-through; margin-left: 10px; margin-right: 10px;">-</p>
+                                <input readonly type="time" id="end-time" value="13:00" style="height: 18px; text-align: center; padding-right: 3px;">
+                            </div>
+                        </div>
+                        
+                        <div class="time-slot">
+                            <p>Saturday</p>
+                            <div name="not-available">
+                                <p style="margin-left: 10px; margin-right: 10px; font-style: italic;">Not Available</p>
+                            </div>
+                        </div>
+                        
+                        <div class="time-slot">
+                            <p>Sunday</p>
+                            <div name="not-available">
+                                <p style="margin-left: 10px; margin-right: 10px; font-style: italic;">Not Available</p>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+    
+                </div>
+                <div name="skills-tab" style="margin-right: 40%; margin-left: 10%;">
+                    <h2 style="padding-right: 50px; margin-top: 10px; margin-bottom: 7px;">Skills</h2>
+                    <ul name="skills-list" style="padding-left:10px; display: flex; flex-direction: column; flex-wrap: wrap; white-space: nowrap;">
+                        <li style="list-style-type: none; margin-bottom: 6px;">
+                            <input disabled checked type="checkbox" id="organized" value="Communication">
+                            <label for="communication">Communication</label>
+                        </li>
+                        <li style="list-style-type: none; margin-bottom: 6px;">
+                            <input disabled checked type="checkbox" id="organized" value="Teamwork">
+                            <label for="teamwork">Teamwork</label>
+                        </li>
+                        <li style="list-style-type: none; margin-bottom: 6px;">
+                            <input disabled type="checkbox" id="organized" value="Creativity">
+                            <label for="creativity">Creativity</label>
+                        </li>
+                        <li style="list-style-type: none; margin-bottom: 6px;">
+                            <input disabled type="checkbox" id="organized" value="Adaptability">
+                            <label for="adaptability">Adaptability</label>
+                        </li>
+                        <li style="list-style-type: none; margin-bottom: 6px;">
+                            <input disabled checked type="checkbox" id="organized" value="Problem-solving">
+                            <label for="problem-solving">Problem-solving</label>
+                        </li>
+                        <li style="list-style-type: none; margin-bottom: 6px;">
+                            <input disabled type="checkbox" id="organized" value="Organization">
+                            <label for="organization">Organization</label>
+                        </li>
+                    </ul>
+            </div>
+        </div>    
+    </div>
+    <div name="side-page" style="display: flex; flex-direction: column; flex-wrap: wrap; justify-content: space-between;">
+        <div class="meetings-tab">
+            <h2 style="padding-right: 5%; white-space: nowrap;">Incoming meeting requests</h2>
+            
+            <div class="meeting-request"> 
+                <img class="profile-picture" src="/resources/example-meeting-picture.png" width="80" height="80" min-width=100% alt="Profile Picture" style="padding-left: 0%; padding-top: 0%; margin-left: 10px;">
+                
+                <div style="display:flex; flex-direction: row; white-space: nowrap; flex:auto">
+                    <div style="display: flex; flex-direction: column; margin-left: 10px;">
+                        <h1 style="padding-left: 1%; margin-bottom: 6px;">Mentee Name</h1>   
+                        <a class="button clickable-link" style="height: 18px; margin-bottom: 3px; margin-left: 10px; width: 70%; text-align: center;" href="/mentee-profile/">See Full Profile</a>      
+                    </div>
+                    <div style="display: flex; flex-direction: column; justify-content: center;">
+                        <a class="button clickable-link" style="height: 18px; margin-bottom: 3px; margin-left: 20px; background-color: rgb(22, 121, 22);" href="/accept-request/">Accept request</a>
+                        <a class="button clickable-link" style="height: 18px; margin-bottom: 3px; margin-left: 20px; background-color: rgb(190, 21, 21);" href="/dismiss-request/">Dismiss request</a>  
+                    </div>             
+                </div>
+            </div>
+
+            <div class="meeting-request"> 
+                <img class="profile-picture" src="/resources/example-meeting-picture2.png" width="80" height="80" min-width=100% alt="Profile Picture" style="padding-left: 0%; padding-top: 0%; margin-left: 10px;">
+                
+                <div style="display:flex; flex-direction: row; white-space: nowrap; flex:auto">
+                    <div style="display: flex; flex-direction: column; margin-left: 10px;">
+                        <h1 style="padding-left: 1%; margin-bottom: 6px;">Mentee Name</h1>   
+                        <a class="button clickable-link" style="height: 18px; margin-bottom: 3px; margin-left: 10px; width: 70%; text-align: center;" href="/mentee-profile/">See Full Profile</a>      
+                    </div>
+                    <div style="display: flex; flex-direction: column; justify-content: center;">
+                        <a class="button clickable-link" style="height: 18px; margin-bottom: 3px; margin-left: 20px; background-color: rgb(22, 121, 22);" href="/accept-request/">Accept request</a>
+                        <a class="button clickable-link" style="height: 18px; margin-bottom: 3px; margin-left: 20px; background-color: rgb(190, 21, 21);" href="/dismiss-request/">Dismiss request</a>  
+                    </div>             
+                </div>
             </div>
         </div>
+        
+        <div class="more-info-tab">
+            <p class="button" style="height: 18px; margin-left: 1%; border-radius: 8px; background-color: rgb(14, 94, 111); padding-left: 20px; padding-right: 20px; margin-bottom: 10px;" >Job Category: Finance</p>
+            <p class="button" style="height: 18px; margin-left: 1%; border-radius: 8px; background-color: rgb(14, 94, 111); padding-left: 20px; padding-right: 20px;">Company: HappyCats Co</p>
+        </div>
     </div>
-
-    
-
-    
 </body>
 
 <footer>

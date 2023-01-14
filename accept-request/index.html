@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="/resources/logo.png">
+</head>
+<header>
+    <div class="nav-pane">
+        <img src="/resources/logo.png" alt="MindAid Logo" width="100" height="100" min-width=100%>
+        <ul>
+            <li class="button">
+                <a class="clickable-link" href="/">Home</a>
+            </li>
+            <li class="button">
+                <a class="clickable-link" href="/about/">About</a>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="header-title">
+        <h1>MindAid</h1>
+        <h3>Help is on the way!</h3>
+    </div>
+
+    <div  style="width: 257px"></div> <!-- used to center the main title-->
+</header>
+
+<footer>
+    <p>© 2023 Website created by Group CSE1 14</p> 
+</footer>
+<body style="display: flex; flex-direction: column;">
+    <h2 style="margin-left: 40px; margin-bottom: 35px;">Accept Meeting request</h2> 
+    <div name="top-part" style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+        <div name="top-left" style="margin-left: 200px;">
+            <h3>Request made by</h3>
+            <div class="meeting-request"> 
+                <img class="profile-picture" src="/resources/example-meeting-picture2.png" width="80" height="80" min-width=100% alt="Profile Picture" style="padding-left: 0%; padding-top: 0%; margin-left: 10px;">
+                
+                <div style="display:flex; flex-direction: row; white-space: nowrap; flex:auto">
+                    <div style="display: flex; flex-direction: column; margin-left: 10px;">
+                        <h1 style="padding-left: 1%; margin-bottom: 0px;">Mentee Name</h1>
+                        <div name="bio">
+                            <h3 style="padding-right: 5%; white-space: nowrap; margin-top: 10px; margin-bottom: 7px; margin-left: 10px;">Biography</h3>
+                            <textarea readonly class="bio-pane" id="bio" rows="4" style="width: 300px">Short description</textarea>
+                        </div>  
+                    </div>
+                    <a class="button clickable-link" style="margin-top: 10px; height: 18px; margin-bottom: 3px; margin-left: 30px; width: 75%; text-align: center;" href="/mentee-profile/">See Full Profile</a>                  
+                </div>
+            </div>
+        </div>
+
+        <div name="top-right" style="padding-right: 10%;">
+            <div name="avail-time-slots">
+                <h2 style="padding-right: 5%; white-space: nowrap; margin-top: 10px; margin-bottom: 7px;">Your available time slots</h2>
+                <div class="time-slots-list">
+                    <div class="time-slot">
+                        <p>Monday</p>
+                        <div name="time-intervals" style="display: flex;">
+                            <input readonly type="time" id="start-time" value="10:00" style="margin-left: 10px; height: 18px; text-align: center; padding-right: 3px;">
+                            <p style="text-decoration: line-through; margin-left: 10px; margin-right: 10px;">-</p>
+                            <input readonly type="time" id="end-time" value="16:00" style="height: 18px; text-align: center; padding-right: 3px;">
+                        </div>
+                    </div>
+                    <div class="time-slot">
+                        <p>Tuesday</p>
+                        <div name="time-intervals" style="display: flex;">
+                            <input readonly type="time" id="start-time" value="15:00" style="margin-left: 10px; height: 18px; text-align: center; padding-right: 3px;">
+                            <p style="text-decoration: line-through; margin-left: 10px; margin-right: 10px;">-</p>
+                            <input readonly type="time" id="end-time" value="18:00" style="height: 18px; text-align: center; padding-right: 3px;">
+                        </div>
+                    </div>
+                    <div class="time-slot">
+                        <p>Wednesday</p>
+                        <div name="time-intervals" style="display: flex;">
+                            <input readonly type="time" id="start-time" value="09:00" style="margin-left: 10px; height: 18px; text-align: center; padding-right: 3px;">
+                            <p style="text-decoration: line-through; margin-left: 10px; margin-right: 10px;">-</p>
+                            <input readonly type="time" id="end-time" value="17:00" style="height: 18px; text-align: center; padding-right: 3px;">
+                        </div>
+                    </div>
+                    
+                    <div class="time-slot">
+                        <p>Thursday</p>
+                        <div name="not-available">
+                            <p style="margin-left: 10px; margin-right: 10px; font-style: italic;">Not Available</p>
+                        </div>
+                    </div>
+                    
+                    <div class="time-slot">
+                        <p>Friday</p>
+                        <div name="time-intervals" style="display: flex;">
+                            <input readonly type="time" id="start-time" value="10:00" style="margin-left: 10px; height: 18px; text-align: center; padding-right: 3px;">
+                            <p style="text-decoration: line-through; margin-left: 10px; margin-right: 10px;">-</p>
+                            <input readonly type="time" id="end-time" value="13:00" style="height: 18px; text-align: center; padding-right: 3px;">
+                        </div>
+                    </div>
+                    
+                    <div class="time-slot">
+                        <p>Saturday</p>
+                        <div name="not-available">
+                            <p style="margin-left: 10px; margin-right: 10px; font-style: italic;">Not Available</p>
+                        </div>
+                    </div>
+                    
+                    <div class="time-slot">
+                        <p>Sunday</p>
+                        <div name="not-available">
+                            <p style="margin-left: 10px; margin-right: 10px; font-style: italic;">Not Available</p>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div name="bottom-part" style="display: flex; flex-direction: row; justify-content: space-between; margin-top: 60px; margin-left: 30%; margin-right: 30%; margin-bottom: 60px;">
+        <div style="display: flex; flex-direction: row; align-items: center;">
+            <p style="margin-bottom: 0px; margin-right: 5px;">Purpose:</p>
+            <input type="text" id="location">
+        </div>
+        <div style="display: flex; flex-direction: row;">
+            <p style="white-space: nowrap; margin-bottom: 0px; margin-right: 5px;">Choose date:</p>
+            <input type="date" name="" id="">
+        </div>
+    </div>
+    <a class="button clickable-link" style="align-self: center; background-color: rgb(22, 121, 22); padding-left: 20px; padding-right: 20px; font-size: large;" href="/mentor-profile/">Accept request</a>
+</body>
+</html>

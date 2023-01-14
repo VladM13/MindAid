@@ -9,6 +9,7 @@
 header {
     background-color: rgb(14, 94, 111);
     color: white;
+    width: 100%;
 
     display: flex;
     flex-direction: row;
@@ -67,6 +68,7 @@ header ul {
 body {
     background-color: rgb(255, 239, 214);
     background-attachment: fixed;
+    margin-bottom: 50px;
 }
 
 .welcome-message {
@@ -102,12 +104,9 @@ footer {
 
 .profile-header {
     padding-top: 30px;
-    padding-left: 5%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* REMOVE LATER */  
-    border: 1px solid black;
     padding-bottom: 10px;
 }
 
@@ -119,8 +118,212 @@ footer {
 
 .meetings-tab {
     text-align: center;
-    /* REMOVE LATER */  
-    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
     padding-right: 60px;
     padding-left: 60px;
+    padding-top: 30px;
+}
+
+.meeting-request {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    display:flex; 
+    flex-direction: row;
+    border: 1px solid black;
+    border-radius: 6px;
+    background-color: rgba(239, 153, 83, 0.803);
+}
+
+.more-info-tab {
+    padding-left: 30px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px; 
+    text-align: center;
+}
+
+.bio-pane { 
+    resize: none; 
+    margin-right: 1%; 
+    margin-left: 10px;
+    width: 80%; 
+    background-color: rgb(255, 247, 236);
+    pointer-events: none;
+}
+
+.time-slots-list {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.time-slot {
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+}
+
+.time-slot input::-webkit-calendar-picker-indicator {
+    background: none;
+    display: none;
+}
+
+label{
+    display: inline-block;
+    width: 150px;
+}
+.signupbuttons{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    margin-top: 10px;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.formbutton{
+   background-color: white;
+   padding: 10px;
+   font-size: 15px;
+}
+
+.title{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.formbutton:hover{
+    color: rgb(14, 94, 111);
+}
+
+.signinform{
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+}
+
+.title1{
+    margin-top: 10px;
+    margin-left: 20px;
+    text-align: center;
+} 
+
+.signinbutton{
+   background-color: white;
+   padding: 10px;
+   font-size: 15px;
+   margin-top: 20px;
+}
+
+.signinbutton:hover{
+    color: rgb(14, 94, 111);
+}
+
+.signinbuttons{
+    display: flex;
+    text-align: center;
+    column-gap: 50px;
+}
+
+
+
+.mentorbutton{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mentorbutton:hover{
+    color: rgb(14, 94, 111);
+}
+
+
+.mentor{
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border: 2px solid rgb(14, 94, 111);
+    margin-left: 20px;
+    margin-right: 20px;
+    justify-content: space-around;
+}
+
+.bio{
+    font-size: 12px;
+}
+
+.results{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.twobuttons{
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+
+.profileinfo{
+    display: flex;
+    flex-direction: column;
+}
+
+.form{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 10px ;
+}
+
+.onegroup{
+    display: flex;
+    flex-direction: column;
+    gap: 50px ;
+}
+
+.secondgroup{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.skills{
+    margin-left: 100px;
+}
+
+.signupform{
+    line-height: 2;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 50px;
+    align-items: center;
+    
+}
+
+.formfields{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 20px;
+}
+
+.signupbuttons2{
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 75px;
+    align-self:center; 
 }

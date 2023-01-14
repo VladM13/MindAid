@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="/resources/logo.png">
+</head>
+<header>
+    <div class="nav-pane">
+        <img src="/resources/logo.png" alt="MindAid Logo" width="100" height="100" min-width=100%>
+        <ul>
+            <li class="button">
+                <a class="clickable-link" href="/">Home</a>
+            </li>
+            <li class="button">
+                <a class="clickable-link" href="/about/">About</a>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="header-title">
+        <h1>MindAid</h1>
+        <h3>Help is on the way!</h3>
+    </div>
+
+    <div  style="width: 257px"></div> <!-- used to center the main title-->
+</header>
+
+<footer>
+    <p>© 2023 Website created by Group CSE1 14</p> 
+</footer>
+<body>
+    <h1 class="title">Sign Up Form</h1> 
+    <form  class="signupform" action="">
+        <div class="formfields">
+            <div class="onecolumn">
+                <label for="">Id</label><input type="text" name="name" id="id"><br>
+                <label for="">Password</label><input type="text" name="password"><br>
+                <label for="">First Name</label><input type="text" name="name"><br>
+                <label for="">Last Name</label><input type="text" name="name"><br>
+                <label for="">Sex</label>
+                    <select name="sex" id="sex">
+                        <option value="Female">Female</option>
+                        <option value="Male">Male</option>
+                        <option value="Other">Other</option>
+                    </select>
+                <br>
+            </div>
+            <div class="twocolumn">
+                <label for="">Address</label><input type="text" name="address"><br>
+                <label for="">Country</label><input type="text" name="country"><br>
+                <label for="">Zip Code</label><input type="text" name="zipcode"><br>
+                <label for="">Language</label><input type="text" name="language"><br>
+            </div>
+            <div class="bio1">
+                <label for="">Bio</label><br><textarea name="bio" rows="5"></textarea><br>
+            </div>
+        </div>
+        <div class="signupbuttons2">
+            <a class="clickable-link button" href="/mentor-profile/" type="submit" style="margin-bottom: 20px; font-size: large; padding-left: 28px; padding-right: 28px;">Sign Up as Mentor</a>
+            <a class="clickable-link button" href="/mentee-profile/" type="submit" style="margin-bottom: 20px; font-size: large; padding-left: 28px; padding-right: 28px;">Sign Up as Mentee</a>
+        </div>
+    </form>
+</body>
+</html>

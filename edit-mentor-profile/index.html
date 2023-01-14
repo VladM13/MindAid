@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" style="margin: 0; padding: 0;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindAid Mentor Profile</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="/resources/logo.png">
+</head>
+
+<header>
+    <div class="nav-pane">
+        <img src="/resources/logo.png" alt="MindAid Logo" width="100" height="100" min-width=100%>
+        <ul>
+            <li class="button">
+                <a class="clickable-link" href="/">Home</a>
+            </li>
+            <li class="button">
+                <a class="clickable-link" href="/about/">About</a>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="header-title">
+        <h1>MindAid</h1>
+        <h3>Help is on the way!</h3>
+    </div>
+
+    <div  style="width: 257px"></div> <!-- used to center the main title-->
+</header>
+
+<body>
+    <div name="whole-page" style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+        <div name="main-page" style="display: flex; flex-direction: column; flex: auto; padding-left: 5%;">
+            <div name="profile-top" class ="profile-header">
+                <div style="display: flex; flex-direction: column;">
+                    <img class="profile-picture" src="/resources/mentor-profile-picture.jpg" width="120" height="120" min-width=100% alt="Profile Picture" style="padding-left: 0%; padding-top: 0%;">
+                    <input type="file" id="choose-profile-picture" style="width: 90px; margin-left: 17px; margin-top: 6px;">
+                </div>
+                
+                
+                <div style="display:flex; flex-direction: column; white-space: nowrap; flex:auto">
+                    <div style="display: flex; flex-direction: row; height: 60px; margin-top: 6px;">
+                        <h1 style="padding-left: 1%;">Profile Name</h1>
+                        
+                        <div class="button" style="height: 18px; margin-left: 1%; border-radius: 8px;">
+                            Rating 4.8/5
+                        </div>
+                        
+                    </div>
+                    <div style="padding-left: 2%; width: 300px">
+                        <p style="margin: 0;">Role: Mentor</p>
+                        <p>Location: 
+                            <input type="text" id="location">
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div name="profile-middle" style="margin-left: 130px;">
+                <h2 style="padding-right: 5%; white-space: nowrap; margin-top: 10px;">Biography</h2>
+                <textarea class="bio-pane" id="bio" rows="7" style="pointer-events: all; background-color: white;"></textarea>
+            </div>  
+
+            <div name="profile-bottom" style="display:flex; margin-top: 20px; margin-left: 130px; justify-content: space-between;">
+                <div name="editable-avail-time-slots">
+                    <h2 style="padding-right: 5%; white-space: nowrap; margin-top: 10px; margin-bottom: 7px;">Available time slots</h2>
+                    <div class="time-slots-list">
+                        <div style="display: flex; justify-content: space-between;">
+                            <div style="display: flex;">
+                                <input type="checkbox" id="monday" style="height: 19px; margin-right: 5px;">
+                                <p>Monday</p>
+                            </div>
+                            <div name="time-intervals" style="display: flex; margin-left: 10px;">
+                                <input type="time" id="start-time" value="10:00" style="margin-left: 10px; height: 18px; text-align: center; padding-right: 3px;">
+                                <p style="text-decoration: line-through; margin-left: 10px; margin-right: 10px;">-</p>
+                                <input type="time" id="end-time" value="16:00" style="height: 18px; text-align: center; padding-right: 3px;">
+                            </div>
+                        </div>
+                        <div style="display: flex; justify-content: space-between;">
+                            <div style="display: flex;">
+                                <input type="checkbox" id="monday" style="height: 19px; margin-right: 5px;">
+                                <p>Tuesday</p>
+                            </div>
+                            <div name="time-intervals" style="display: flex; margin-left: 10px;">
+                                <input type="time" id="start-time" value="10:00" style="margin-left: 10px; height: 18px; text-align: center; padding-right: 3px;">
+                                <p style="text-decoration: line-through; margin-left: 10px; margin-right: 10px;">-</p>
+                                <input type="time" id="end-time" value="16:00" style="height: 18px; text-align: center; padding-right: 3px;">
+                            </div>
+                        </div><div style="display: flex; justify-content: space-between;">
+                            <div style="display: flex;">
+                                <input type="checkbox" id="monday" style="height: 19px; margin-right: 5px;">
+                                <p>Wednesday</p>
+                            </div>
+                            <div name="time-intervals" style="display: flex; margin-left: 10px;">
+                                <input type="time" id="start-time" value="10:00" style="margin-left: 10px; height: 18px; text-align: center; padding-right: 3px;">
+                                <p style="text-decoration: line-through; margin-left: 10px; margin-right: 10px;">-</p>
+                                <input type="time" id="end-time" value="16:00" style="height: 18px; text-align: center; padding-right: 3px;">
+                            </div>
+                        </div><div style="display: flex; justify-content: space-between;">
+                            <div style="display: flex;">
+                                <input type="checkbox" id="monday" style="height: 19px; margin-right: 5px;">
+                                <p>Thursday</p>
+                            </div>
+                            <div name="time-intervals" style="display: flex; margin-left: 10px;">
+                                <input type="time" id="start-time" value="10:00" style="margin-left: 10px; height: 18px; text-align: center; padding-right: 3px;">
+                                <p style="text-decoration: line-through; margin-left: 10px; margin-right: 10px;">-</p>
+                                <input type="time" id="end-time" value="16:00" style="height: 18px; text-align: center; padding-right: 3px;">
+                            </div>
+                        </div><div style="display: flex; justify-content: space-between;">
+                            <div style="display: flex;">
+                                <input type="checkbox" id="monday" style="height: 19px; margin-right: 5px;">
+                                <p>Friday</p>
+                            </div>
+                            <div name="time-intervals" style="display: flex; margin-left: 10px;">
+                                <input type="time" id="start-time" value="10:00" style="margin-left: 10px; height: 18px; text-align: center; padding-right: 3px;">
+                                <p style="text-decoration: line-through; margin-left: 10px; margin-right: 10px;">-</p>
+                                <input type="time" id="end-time" value="16:00" style="height: 18px; text-align: center; padding-right: 3px;">
+                            </div>
+                        </div><div style="display: flex; justify-content: space-between;">
+                            <div style="display: flex;">
+                                <input type="checkbox" id="monday" style="height: 19px; margin-right: 5px;">
+                                <p>Saturday</p>
+                            </div>
+                            <div name="time-intervals" style="display: flex; margin-left: 10px;">
+                                <input type="time" id="start-time" value="10:00" style="margin-left: 10px; height: 18px; text-align: center; padding-right: 3px;">
+                                <p style="text-decoration: line-through; margin-left: 10px; margin-right: 10px;">-</p>
+                                <input type="time" id="end-time" value="16:00" style="height: 18px; text-align: center; padding-right: 3px;">
+                            </div>
+                        </div><div style="display: flex; justify-content: space-between;">
+                            <div style="display: flex;">
+                                <input type="checkbox" id="monday" style="height: 19px; margin-right: 5px;">
+                                <p>Sunday</p>
+                            </div>
+                            <div name="time-intervals" style="display: flex; margin-left: 10px;">
+                                <input type="time" id="start-time" value="10:00" style="margin-left: 10px; height: 18px; text-align: center; padding-right: 3px;">
+                                <p style="text-decoration: line-through; margin-left: 10px; margin-right: 10px;">-</p>
+                                <input type="time" id="end-time" value="16:00" style="height: 18px; text-align: center; padding-right: 3px;">
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+    
+                </div>
+                <div name="skills-tab" style="margin-right: 40%; margin-left: 10%;">
+                    <h2 style="padding-right: 50px; margin-top: 10px; margin-bottom: 7px;">Skills</h2>
+                    <ul name="skills-list" style="padding-left:10px; display: flex; flex-direction: column; flex-wrap: wrap; white-space: nowrap;">
+                        <li style="list-style-type: none; margin-bottom: 6px;">
+                            <input type="checkbox" id="organized" value="Communication">
+                            <label for="communication">Communication</label>
+                        </li>
+                        <li style="list-style-type: none; margin-bottom: 6px;">
+                            <input type="checkbox" id="organized" value="Teamwork">
+                            <label for="teamwork">Teamwork</label>
+                        </li>
+                        <li style="list-style-type: none; margin-bottom: 6px;">
+                            <input type="checkbox" id="organized" value="Creativity">
+                            <label for="creativity">Creativity</label>
+                        </li>
+                        <li style="list-style-type: none; margin-bottom: 6px;">
+                            <input type="checkbox" id="organized" value="Adaptability">
+                            <label for="adaptability">Adaptability</label>
+                        </li>
+                        <li style="list-style-type: none; margin-bottom: 6px;">
+                            <input type="checkbox" id="organized" value="Problem-solving">
+                            <label for="problem-solving">Problem-solving</label>
+                        </li>
+                        <li style="list-style-type: none; margin-bottom: 6px;">
+                            <input type="checkbox" id="organized" value="Organization">
+                            <label for="organization">Organization</label>
+                        </li>
+                    </ul>
+            </div>
+        </div>    
+    </div>
+    <div name="side-page" style="display: flex; flex-direction: column; flex-wrap: wrap; justify-content: space-between;">
+        <div class="meetings-tab">
+            <h2 style="padding-right: 5%; white-space: nowrap;">Incoming meeting requests</h2>
+            
+        </div>
+        
+        <div class="more-info-tab">
+            <p class="button" style="height: 18px; margin-left: 1%; border-radius: 8px; background-color: rgb(14, 94, 111); padding-left: 20px; padding-right: 20px; margin-bottom: 10px;" >Job Category: 
+                <input type="text" id="job-category">
+            </p>
+            <p class="button" style="height: 18px; margin-left: 1%; border-radius: 8px; background-color: rgb(14, 94, 111); padding-left: 20px; padding-right: 20px;">Company: 
+                <input type="text" id="job-category">
+            </p>
+            <a class="button clickable-link" style="align-self: center; margin-top: 60px; height: 18px; margin-left: 100px; background-color: rgb(22, 121, 22); font-size: large; padding-left: 20px; padding-right: 20px;" href="/mentor-profile/">Save Changes</a>
+
+        </div>
+    </div>
+</body>
+
+<footer>
+    <p>© 2023 Website created by Group CSE1 14</p> 
+</footer>
+
+</html>
