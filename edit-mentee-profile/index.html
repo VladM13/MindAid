@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>edit-mentee-profile</title>
+    <link rel="stylesheet" href="/MindAid/style.css">
+    <link rel="icon" href="/MindAid/resources/logo.png">
+</head>
+<header>
+    <div class="nav-pane">
+        <img src="/MindAid/resources/logo.png" alt="MindAid Logo" width="100" height="100" min-width=100%>
+        <ul>
+            <li class="button">
+                <a class="clickable-link" href="/MindAid/">Home</a>
+            </li>
+            <li class="button">
+                <a class="clickable-link" href="/MindAid/about/">About</a>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="header-title">
+        <h1>MindAid</h1>
+        <h3>Help is on the way!</h3>
+    </div>
+
+    <div  style="width: 257px"></div> <!-- used to center the main title-->
+</header>
+<body>
+    <div name="whole-page" style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+        <div name="main-page" style="display: flex; flex-direction: column; flex: auto; padding-left: 5%;">
+            <div name="profile-top" class ="profile-header">
+                <div style="display: flex; flex-direction: column;">
+                    <img class="profile-picture" src="/MindAid/resources/example-meeting-picture.png" width="120" height="120" min-width=100% alt="Profile Picture" style="padding-left: 0%; padding-top: 0%;">
+                    <input type="file" id="choose-profile-picture" style="width: 90px; margin-left: 17px; margin-top: 6px;">
+                </div>
+                
+                
+                <div style="display:flex; flex-direction: column; white-space: nowrap; flex:auto">
+                    <div style="display: flex; flex-direction: row; height: 60px; margin-top: 6px;">
+                        <h1 style="padding-left: 1%;">Profile Name</h1>
+                    </div>
+                    <div style="padding-left: 2%; width: 300px">
+                        <p style="margin: 0;">Role: Mentee</p>
+                        <p>Location: 
+                            <input type="text" id="location">
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div name="profile-middle" style="margin-left: 130px;">
+                <h2 style="padding-right: 5%; white-space: nowrap; margin-top: 10px;">Biography</h2>
+                <textarea class="bio-pane" id="bio" rows="7" style="pointer-events: all; background-color: white;"></textarea>
+            </div>  
+
+            
+        </div>    
+    </div>
+    <div name="side-page" style="display: flex; flex-direction: column; flex-wrap: wrap; justify-content: space-between;">
+        
+        <div class="more-info-tab">
+            <a class="button clickable-link" style="align-self: center; margin-top: 60px; height: 18px; margin-left: 100px; background-color: rgb(22, 121, 22); font-size: large; padding-left: 20px; padding-right: 20px;" href="/MindAid/mentee-profile/">Save Changes</a>
+        </div>
+    </div>
+</body>
+<footer>
+    <p>© 2023 Website created by Group CSE1 14</p> 
+</footer>
+</html>
